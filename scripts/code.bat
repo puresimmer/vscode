@@ -25,11 +25,12 @@ set ELECTRON_ENABLE_STACK_DUMPING=1
 set VSCODE_LOGS=
 
 :: Launch Code
-
+@echo %CODE% . %*
 %CODE% . %*
 goto end
 
 :builtin
+@echo %CODE% build/builtin
 %CODE% build/builtin
 
 :end
